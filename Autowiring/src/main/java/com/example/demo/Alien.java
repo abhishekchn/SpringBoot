@@ -1,10 +1,11 @@
 package com.example.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-//@Scope(value = "prototype")
+@Scope(value = "prototype")
 public class Alien {
 	private int aId;
 	private String aName;
